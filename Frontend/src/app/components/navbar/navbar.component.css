@@ -1,0 +1,63 @@
+.navbar {
+    background-color: #ffffff; /* Cambia el fondo del navbar */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nav-link {
+    color: inherit; /* Mantiene el color del texto inicial */
+    text-decoration: none; /* Elimina la subrayado por defecto */
+  }
+  
+  .nav-link:hover {
+    color: inherit; /* Mantiene el color también en hover */
+    text-decoration: none; /* Asegura que no se subraye al pasar el mouse */
+  }
+
+  /* Espaciado de la marca del navbar */
+.navbar-brand {
+    margin-left: 15px; /* Ajusta el margen izquierdo */
+  }
+  
+  /* Ajusta el espaciado de los elementos del navbar */
+  .navbar-nav .nav-item {
+    margin-right: 15px;
+  }
+  
+  /* Cambiar el color y el estilo de los links al pasar el mouse */
+  .nav-link:hover {
+    color: inherit; /* Mantiene el color también en hover */
+    text-decoration: none; /* Asegura que no se subraye al pasar el mouse */
+  }
+  
+  /* Cambia el dropdown a hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Opcional: ajusta el espaciado de la posición */
+}
+
+/* Evita que los enlaces cambien de color al hacer hover */
+.nav-link {
+    color: inherit; /* Mantiene el color del texto inicial */
+    text-decoration: none; /* Elimina la subrayado por defecto */
+}
+
+.nav-link:hover {
+    color: #000000; /* Cambia el color del texto al pasar el mouse */
+    text-decoration: none; /* Asegura que no se subraye al pasar el mouse */
+}
+
+/* Estilo para letra solemne */
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #606060;
+}
+
+/* Cambia el color del ícono al pasar el mouse */
+.nav-link:hover .bi-basket3-fill {
+    color: #09477a;
+}
