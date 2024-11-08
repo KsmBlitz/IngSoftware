@@ -1,63 +1,83 @@
+/* Fondo del navbar */
 .navbar {
-    background-color: #ffffff; /* Cambia el fondo del navbar */
-  }
-  
-  .navbar-brand {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .nav-link {
-    color: inherit; /* Mantiene el color del texto inicial */
-    text-decoration: none; /* Elimina la subrayado por defecto */
-  }
-  
-  .nav-link:hover {
-    color: inherit; /* Mantiene el color también en hover */
-    text-decoration: none; /* Asegura que no se subraye al pasar el mouse */
-  }
-
-  /* Espaciado de la marca del navbar */
-.navbar-brand {
-    margin-left: 15px; /* Ajusta el margen izquierdo */
-  }
-  
-  /* Ajusta el espaciado de los elementos del navbar */
-  .navbar-nav .nav-item {
-    margin-right: 15px;
-  }
-  
-  /* Cambiar el color y el estilo de los links al pasar el mouse */
-  .nav-link:hover {
-    color: inherit; /* Mantiene el color también en hover */
-    text-decoration: none; /* Asegura que no se subraye al pasar el mouse */
-  }
-  
-  /* Cambia el dropdown a hover */
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; /* Opcional: ajusta el espaciado de la posición */
+  background-color: #181818 !important; /* Fondo negro */
+  color: #ffffff !important; /* Texto blanco */
 }
 
-/* Evita que los enlaces cambien de color al hacer hover */
+/* Logo y texto de la marca */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px; /* Tamaño de letra más grande */
+  font-weight: bold;
+  color: #ffffff !important; /* Texto blanco */
+  margin-left: 15px; /* Espacio del logo y marca desde el borde izquierdo */
+}
+
+/* Estilo para el logo de la navbar */
+.navbar-logo {
+  width: 60px; /* Ajusta el tamaño del logo */
+  height: auto;
+  margin-right: 10px; /* Espacio entre el logo y el texto de la marca */
+}
+
+
+/* Estilos de los enlaces del navbar */
 .nav-link {
-    color: inherit; /* Mantiene el color del texto inicial */
-    text-decoration: none; /* Elimina la subrayado por defecto */
+  font-size: 18px; /* Tamaño de letra más grande */
+  color: #ffffff !important; /* Color blanco para los enlaces */
+  text-decoration: none;
+  margin-right: 15px; /* Espaciado entre enlaces */
 }
 
+/* Efecto de hover para los enlaces */
 .nav-link:hover {
-    color: #000000; /* Cambia el color del texto al pasar el mouse */
-    text-decoration: none; /* Asegura que no se subraye al pasar el mouse */
+  color: #cccccc !important; /* Un tono gris claro al hacer hover */
+  text-decoration: none;
 }
 
-/* Estilo para letra solemne */
-.navbar-brand {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    color: #606060;
+/* Efecto de hover para el ícono del carrito */
+.nav-link:hover .bi-cart {
+  color: #cccccc !important; /* Cambia el color del carrito a gris claro en hover */
 }
 
-/* Cambia el color del ícono al pasar el mouse */
-.nav-link:hover .bi-basket3-fill {
-    color: #09477a;
+/* Estilos del fondo y texto del dropdown */
+.navbar-dark .navbar-nav .dropdown-menu {
+  background-color: #000000 !important; /* Fondo negro */
+  color: #ffffff !important; /* Texto blanco */
 }
+
+/* Estilos para los elementos dentro del dropdown */
+.navbar-dark .navbar-nav .dropdown-item {
+  color: #ffffff !important; /* Color blanco para los elementos */
+}
+
+/* Estilo para el hover de los elementos del dropdown */
+.navbar-dark .navbar-nav .dropdown-item:hover {
+  background-color: #444444 !important; /* Fondo gris oscuro al hacer hover */
+  color: #ffffff !important; /* Texto blanco al hacer hover */
+}
+
+/* Si deseas que el ícono dentro del dropdown también sea blanco */
+.navbar-dark .navbar-nav .dropdown-item i {
+  color: #ffffff !important;
+}
+
+/* Ajustes para el menú desplegable en hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Ajuste opcional */
+}
+
+/* Alineación y espaciado del carrito de compras */
+.nav-item:last-child {
+  margin-right: 0px; /* Más cerca del borde derecho */
+}
+
+/* Evita que el enlace "Servicios" cambie a azul al hacer hover */
+.dropdown-toggle:hover {
+  color: #cccccc !important;
+  text-decoration: none;
+}
+

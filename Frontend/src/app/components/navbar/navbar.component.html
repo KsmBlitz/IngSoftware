@@ -1,17 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>François Hollan Banquetería</title>
+  <!-- Enlazar tu archivo CSS -->
+  <link rel="stylesheet" href="./navbar.component.css"> <!-- Asegúrate de que esta ruta sea correcta -->
+  <!-- Agregar Bootstrap (si es necesario) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Agregar los íconos de Bootstrap (si es necesario) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand ms-2" href="#">François Hollan Banquetería</a>
-      
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjdh0zXXL5P8pPduxGpoRKJ4Ji4kGXc1exeXQGVozMH6tlE5K-w9I7666Ulttjb0U6b9oFxuuX4BW5mBHBfL6tLLsNfipYo3j7gTLaty8Qo4a5RDYMOabhgYFS7ER1J8ic5y33mjEcSPo4ysbZrP7JkOhT_E8mP6UTTJ6SMEu8iDCyYuCaUt7t_80w3-K50"  class="navbar-logo"> <!-- Logo -->
+        François Hollan Banquetería
+      </a>
+
       <div class="collapse navbar-collapse justify-content-end">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#">Inicio</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Servicios
             </a>
             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
@@ -28,10 +43,16 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <i class="bi bi-basket3-fill"></i> <!-- Ícono de carrito -->
+              <i class="bi bi-cart"></i> <!-- Ícono del carrito -->
             </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- Agregar los scripts necesarios de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
