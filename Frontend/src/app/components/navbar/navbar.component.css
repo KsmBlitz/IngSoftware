@@ -22,13 +22,13 @@
   margin-right: 10px; /* Espacio entre el logo y el texto de la marca */
 }
 
-
 /* Estilos de los enlaces del navbar */
 .nav-link {
   font-size: 18px; /* Tamaño de letra más grande */
   color: #ffffff !important; /* Color blanco para los enlaces */
   text-decoration: none;
   margin-right: 15px; /* Espaciado entre enlaces */
+  cursor: pointer; /* Icono de clic para los enlaces */
 }
 
 /* Efecto de hover para los enlaces */
@@ -51,17 +51,13 @@
 /* Estilos para los elementos dentro del dropdown */
 .navbar-dark .navbar-nav .dropdown-item {
   color: #ffffff !important; /* Color blanco para los elementos */
+  cursor: pointer; /* Icono de clic para dropdown */
 }
 
 /* Estilo para el hover de los elementos del dropdown */
 .navbar-dark .navbar-nav .dropdown-item:hover {
   background-color: #444444 !important; /* Fondo gris oscuro al hacer hover */
   color: #ffffff !important; /* Texto blanco al hacer hover */
-}
-
-/* Si deseas que el ícono dentro del dropdown también sea blanco */
-.navbar-dark .navbar-nav .dropdown-item i {
-  color: #ffffff !important;
 }
 
 /* Ajustes para el menú desplegable en hover */
@@ -80,4 +76,3 @@
   color: #cccccc !important;
   text-decoration: none;
 }
-
