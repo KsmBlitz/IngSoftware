@@ -2,50 +2,36 @@
 .home-container {
   max-width: auto;
   margin: 0 auto;
+  background-color: #f4f7fa;
   
 }
 
 .image-section {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    padding: auto;
-    overflow: hidden;
-    flex-wrap: nowrap; /* Prevent wrapping to a new line */
-
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  gap: 0px;
 }
 
 .image-item {
-    flex: 1 0 0; /* Ensure each image takes equal width */
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Remove any padding */
-    position: relative; /* Ensure absolute positioning works */
+  position: relative;
+  width: 100%; /* Ajusta según tu diseño */
+  height: auto; /* Ajusta según tu diseño */
+  overflow: hidden; /* Oculta las partes fuera del clip-path */
+  cursor: pointer;
 }
 
-#salones {
-  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%); /* Forma de Salones */
 
-}
-
-#banqueteria {
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); /* Forma de Banquetería */
-}
-
-#entretenimiento {
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); /* Forma de Entretenimiento */
-}
 
 .image-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-  display: block; /* Ensure images are block elements */
-  padding: auto;
+  transition: transform 0.3s ease; /* Zoom suave */
 }
 
 .image-item:hover img {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.1); /* Zoom al pasar el ratón */
 }
 
 .overlay {
@@ -54,19 +40,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  opacity: 0; /* Oculto por defecto */
+  transition: opacity 0.3s ease; /* Transición suave */
 }
 
 .image-item:hover .overlay {
-  opacity: 1;
+  opacity: 1; /* Muestra el overlay al pasar el cursor */
 }
-
 /* Servicios Destacados */
 .featured-services {
   text-align: center;

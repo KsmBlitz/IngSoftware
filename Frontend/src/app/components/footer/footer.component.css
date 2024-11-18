@@ -1,3 +1,20 @@
+/* Asegura que el contenedor principal ocupe toda la altura de la página */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Asegura que el contenido principal ocupe el espacio disponible */
+.main-content {
+  flex: 1;
+}
+
+/* Estilo del footer */
 .footer {
   background-color: #181818;
   color: #ffffff;
@@ -9,9 +26,9 @@
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px; /* Agrega padding para separar un poco del borde de la pantalla */
+  padding: 0 20px;
   width: 100%;
-  max-width: none; /* Elimina cualquier límite de ancho */
+  max-width: none;
 }
 
 .footer-left, .footer-center, .footer-right {
@@ -21,14 +38,15 @@
 
 .footer-left {
   align-items: flex-start;
-  padding-left: 0; /* Alinea el contenido completamente a la izquierda */
+  padding-left: 0;
 }
 
 .footer-right {
   align-items: flex-end;
-  padding-right: 0; /* Alinea el contenido completamente a la derecha */
+  padding-right: 0;
 }
 
+/* Otros estilos del footer mantienen su formato actual */
 .company-name {
   font-size: 16px;
   font-weight: bold;

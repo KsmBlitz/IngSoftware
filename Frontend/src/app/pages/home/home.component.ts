@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 
@@ -7,8 +8,13 @@ import { FooterComponent } from '../../components/footer/footer.component';
   standalone: true,
   imports: [NavbarComponent, FooterComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css'] // Cambiado a 'styleUrls'
 })
 export class HomeComponent {
+  constructor(private router: Router) {}
 
+  // Método para navegación
+  navigateTo(route: string): void {
+    this.router.navigate([route]);
+  }
 }

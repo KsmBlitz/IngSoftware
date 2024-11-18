@@ -44,7 +44,7 @@
 
 /* Estilos del fondo y texto del dropdown */
 .navbar-dark .navbar-nav .dropdown-menu {
-  background-color: #000000 !important; /* Fondo negro */
+  background-color: #181818 !important; /* Fondo negro */
   color: #ffffff !important; /* Texto blanco */
 }
 

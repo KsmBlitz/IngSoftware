@@ -8,6 +8,7 @@ import { EntretenimientoComponent } from './pages/entretenimiento/entretenimient
 import { BuscarReservaComponent } from './pages/buscar-reserva/buscar-reserva.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
+import { IniciarSesionComponent } from './pages/iniciar-sesion/iniciar-sesion.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },  // Ruta para Home
@@ -17,5 +18,6 @@ export const routes: Routes = [
   { path: 'buscar-reserva', component: BuscarReservaComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'carrito', component: CarritoComponent },
+  { path: 'iniciar-sesion', component: IniciarSesionComponent },
   { path: '**', redirectTo: '' }  // Redirigir a Home si la ruta no existe
 ];
