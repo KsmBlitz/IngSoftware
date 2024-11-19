@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 
+declare const google: any;
+
 @Component({
   selector: 'app-contacto',
   standalone: true,
@@ -10,5 +12,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
   styleUrl: './contacto.component.css'
 })
 export class ContactoComponent {
+
+  
 
 }

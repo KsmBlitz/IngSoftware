@@ -1,3 +1,23 @@
 <app-navbar></app-navbar>
-<p>carrito works!</p>
-<app-footer></app-footer>
+
+<div class="carrito">
+  <h2>Carrito de Compras</h2>
+
+  <!-- Mostrar productos del carrito -->
+  <div *ngIf="carrito.length > 0; else carritoVacio">
+    <div *ngFor="let producto of carrito" class="carrito-item">
+      <p>
+        {{ producto.nombre }} - ${{ producto.precio }} x {{ producto.cantidad }}
+        <button (click)="eliminarDelCarrito(producto)">Eliminar</button>
+      </p>
+    </div>
+    <p><strong>Total: ${{ calcularTotal() }}</strong></p>
+  </div>
+
+  <!-- Mensaje si el carrito está vacío -->
+  <ng-template #carritoVacio>
+    <p>El carrito está vacío.</p>
+  </ng-template>
+</div>
+
+<app-footer></app-footer> 
