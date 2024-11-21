@@ -21,12 +21,12 @@ interface Service {
 })
 export class SalonesComponent {
   services: Service[] = [
-    { id: 1, name: 'Catering Básico', description: 'Servicio básico de catering', price: 150, image: 'https://media.istockphoto.com/id/495329828/es/foto/tostado-casero-del-d%C3%ADa-de-acci%C3%B3n-de-gracias-de-turqu%C3%ADa.jpg?s=612x612&w=0&k=20&c=5JwMBcNXS4lIDWp5a5ojJDEf-f-xraaIIXLQl_Vu2to=', category: 'Buffet' },
-    { id: 2, name: 'Catering Premium', description: 'Servicio premium con chef exclusivo', price: 300, image: 'https://img.freepik.com/foto-gratis/vista-superior-mesa-llena-comida_23-2149209253.jpg', category: 'Gourmet' },
-    { id: 3, name: 'Catering Vegano', description: 'Opciones veganas para tus eventos', price: 200, image: 'https://cdn3.pixelcut.app/1/J_e5e994bbb6.webp', category: 'Vegano' },
+    { id: 1, name: 'Salón Castillo', description: 'Viña del Mar, Valparaíso', price: 150, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8nqO4-bsCTtasrVlJxUsxQ85a5_NSLziz0g&s', category: 'Grande' },
+    { id: 2, name: 'Queen Mary', description: 'Viña del Mar, Valparaíso', price: 300, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF-oXD2BJBEA2w-zgzFFBueYOl7JBWoBEaGA&s', category: 'Mediano' },
+    { id: 3, name: 'Salón Esmeralda', description: 'Club Hípico, Santiago', price: 200, image: 'https://image-tc.galaxy.tf/wijpeg-6g1qabb8fle0whipem12v1orv/salon-manquehue-result_standard.jpg?crop=99%2C0%2C1603%2C1202', category: 'Mediano-Junior' },
   ];
 
-  filters: string[] = ['Todos', 'Buffet', 'Gourmet', 'Vegano'];
+  filters: string[] = ['Todos', 'Grande', 'Mediano', 'Mediano-Junior'];
   activeFilter: string = 'Todos';
   filteredServices: Service[] = [...this.services];
   selectedService: Service | null = null;
