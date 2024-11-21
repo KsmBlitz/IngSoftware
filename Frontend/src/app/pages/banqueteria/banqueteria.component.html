@@ -27,11 +27,13 @@
         <div class="card-content">
           <h3 class="service-title">{{ service.name }}</h3>
           <p class="service-description">{{ service.description }}</p>
-          <div class="rating">
-            <span class="score">8.8</span>
-            <span>Fabuloso · 3,039 comentarios</span>
+          <div class="card-footer">
+            <div class="rating">
+              <span class="score">8.8</span>
+
+            </div>
+            <span class="price">Desde {{ service.price | currency }}</span>
           </div>
-          <span class="price">Desde {{ service.price | currency }}</span>
         </div>
       </div>
     </div>
