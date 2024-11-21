@@ -5,7 +5,7 @@ import { routes } from './app.routes';  // Importa tus rutas
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule],  // Importa RouterModule
+  imports: [RouterModule,],  // Importa RouterModule
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
