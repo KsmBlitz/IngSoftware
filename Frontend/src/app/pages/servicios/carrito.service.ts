@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-
+//Servicio aderido al Carrito, para poder agregar y eliminar productos//
 interface Producto {
   id: number;
   nombre: string;

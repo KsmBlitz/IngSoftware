@@ -1,14 +1,19 @@
-import { Component } from '@angular/core';
-import { NavbarComponent } from '../../components/navbar/navbar.component';
-import { FooterComponent } from '../../components/footer/footer.component';
+import { Component, OnInit } from '@angular/core';
+import { ReservasService } from '../servicios_Usuarioreserva/reservas.service';
 
 @Component({
   selector: 'app-buscar-reserva',
-  standalone: true,
-  imports: [NavbarComponent, FooterComponent],
   templateUrl: './buscar-reserva.component.html',
-  styleUrl: './buscar-reserva.component.css'
+  styleUrls: ['./buscar-reserva.component.css']
 })
-export class BuscarReservaComponent {
+export class BuscarReservaComponent implements OnInit {
+  reservas: any[] = [];
 
+  constructor(private reservasService: ReservasService) {}
+
+  ngOnInit(): void {
+    this.reservasService.obtenerReservas().subscribe((data) => {
+      this.reservas = data;
+    });
+  }
 }

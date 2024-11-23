@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 
 <div class="carrito">
-  <h2>Carrito de Compras</h2>
+  <h2>Productos y Servicios Seleccionados</h2>
 
   <!-- Mostrar productos del carrito -->
   <div *ngIf="carrito.length > 0; else carritoVacio">
@@ -16,7 +16,7 @@
 
   <!-- Mensaje si el carrito está vacío -->
   <ng-template #carritoVacio>
-    <p>El carrito está vacío.</p>
+    <p>No hay Productos Seleccionados</p>
   </ng-template>
 </div>
 
